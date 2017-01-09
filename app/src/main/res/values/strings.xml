@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">katta</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter_grid_size">Enter Grid Size in Rows and Columns</string>
+    <string name="enter_row_size">Please enter row size here</string>
+    <string name="enter_col_size">please enter column size here</string>
+    <string name="enter_grid_elements">Enter grid elements</string>
+    <string name="enter_grid_elements_hint">enter grid elements seperated by single space</string>
+    <string name="result_path_hint">Place holder  for MinCost Path</string>
+    <string name="result_cost_hint">Place holder for MinCost </string>
+    <string name="start">Start</string>
+</resources>
