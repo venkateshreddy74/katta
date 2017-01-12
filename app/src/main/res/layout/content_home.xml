@@ -10,83 +10,83 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.katta.venkatesh.com.katta.HomeActivity"
+    tools:context="com.katta.mincost.com.ui.HomeActivity"
     tools:showIn="@layout/activity_home">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/enter_grid_size"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
+        android:text="@string/enter_grid_size" />
     <EditText
         android:id="@+id/row_size"
-        android:layout_marginTop="20dp"
-        android:textAlignment="center"
-        android:layout_centerHorizontal="true"
-        android:hint="@string/enter_row_size"
-        android:layout_below="@id/textView"
         android:layout_width="match_parent"
-        android:layout_height="50dp" />
+        android:layout_height="50dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/enter_row_size"
+        android:textAlignment="center" />
 
     <EditText
         android:id="@+id/column_size"
-        android:layout_marginTop="20dp"
-        android:hint="@string/enter_col_size"
-        android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/row_size"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/row_size"
+        android:layout_marginTop="20dp"
+        android:hint="@string/enter_col_size"
+        android:textAlignment="center" />
 
     <TextView
-        android:layout_below="@id/column_size"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/enter_grid_elements"
+        android:layout_below="@id/column_size"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView2" />
+        android:text="@string/enter_grid_elements" />
 
     <EditText
         android:id="@+id/grid_elements"
         android:layout_width="match_parent"
-        android:hint="@string/enter_grid_elements_hint"
         android:layout_height="100dp"
-        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:hint="@string/enter_grid_elements_hint" />
     <TextView
-        android:layout_below="@id/grid_elements"
         android:id="@+id/resultsView1"
-        android:layout_marginTop="20dp"
-        android:textAlignment="center"
-        android:hint="@string/result_path_hint"
         android:layout_width="match_parent"
-        android:layout_height="30dp" />
+        android:layout_height="30dp"
+        android:layout_below="@id/grid_elements"
+        android:layout_marginTop="20dp"
+        android:hint="@string/result_path_hint"
+        android:textAlignment="center" />
 
 
     <TextView
         android:id="@+id/resultsView2"
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:textAlignment="center"
-        android:hint="@string/result_cost_hint"
-        android:layout_below="@+id/resultsView1"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/resultsView1"
+        android:layout_marginTop="20dp"
+        android:hint="@string/result_cost_hint"
+        android:textAlignment="center" />
 
 
 
     <Button
-        android:layout_width="match_parent"
         android:id="@+id/start_button"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_below="@id/resultsView2"
         android:layout_marginTop="20dp"
-        android:text="@string/start"
-        android:layout_below="@id/resultsView2"/>
+        android:text="@string/start" />
 
 
 </RelativeLayout>
