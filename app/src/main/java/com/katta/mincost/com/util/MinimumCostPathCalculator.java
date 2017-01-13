@@ -4,9 +4,8 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 
-/**
- * Created by venkatesh on 1/8/17.
- */
+import com.katta.mincost.com.R;
+
 
 public class MinimumCostPathCalculator {
 
@@ -37,10 +36,10 @@ public class MinimumCostPathCalculator {
         if ((costsOfGrid.length != inputGrid.length) || (inputGrid[0].length != costsOfGrid[0].length)) {
 
             new AlertDialog.Builder(context)
-                    .setTitle("Error")
-                    .setMessage("Grid Values entered does not fit in to the Given Grid size")
+                    .setTitle(context.getString(R.string.error_title))
+                    .setMessage(context.getString(R.string.invalid_grid_size_message))
                     .setIcon(android.R.drawable.ic_dialog_alert)
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    .setPositiveButton(context.getString(R.string.ok_title), new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.cancel();
@@ -125,9 +124,7 @@ public class MinimumCostPathCalculator {
             sb.append(String.valueOf(temp[pathArray[j]][j]) + "--->");
 
             //  Log.d("MinimalCostPath", String.valueOf(temp[pathArray[j]][j])+"--->");
-
         }
-
         //  Log.d("MinimumCost is ",String.valueOf(temp[pathArray[gridColumns-1]][gridColumns-1]));
         sb.append("  && " + String.valueOf(temp[pathArray[gridColumns - 1]][gridColumns - 1]));
 

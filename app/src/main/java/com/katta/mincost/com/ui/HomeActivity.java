@@ -58,8 +58,8 @@ public class HomeActivity extends AppCompatActivity {
                 if (stringArrayOfMatrixInput.length < rowSize * colSize) {
 
                     new AlertDialog.Builder(context).
-                            setTitle("Error").
-                            setMessage("Grid is not full yet please enter more elements").setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            setTitle(R.string.error_title).
+                            setMessage(R.string.incomplete_grid_message).setPositiveButton(R.string.ok_title, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.cancel();

@@ -9,4 +9,8 @@
     <string name="result_path_hint">Place holder  for MinCost Path</string>
     <string name="result_cost_hint">Place holder for MinCost </string>
     <string name="start">Start</string>
+    <string name="error_title">Error</string>
+    <string name="ok_title">OK</string>
+    <string name="incomplete_grid_message">Grid is not full yet please enter more elements</string>
+    <string name="invalid_grid_size_message">Grid Values entered does not fit in to the Given Grid size</string>
 </resources>
